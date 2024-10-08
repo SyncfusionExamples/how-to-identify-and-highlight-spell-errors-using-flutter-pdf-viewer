@@ -52,13 +52,23 @@ class _PdfViewerPageState extends State<PdfViewerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(0),
+          child: Container(
+            color: Theme.of(context).colorScheme.outlineVariant,
+            height: 1,
+          ),
+        ),
         actions: [
-          TextButton(
-            style: TextButton.styleFrom(
-              backgroundColor: Theme.of(context).colorScheme.onInverseSurface,
+          Padding(
+            padding: const EdgeInsets.only(right: 6),
+            child: TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.onInverseSurface,
+              ),
+              onPressed: () => _performSpellCheck(),
+              child: const Text('Perform Spell Check'),
             ),
-            onPressed: () => _performSpellCheck(),
-            child: const Text('Perform Spell Check'),
           ),
         ],
       ),
@@ -116,14 +126,20 @@ class _PdfViewerPageState extends State<PdfViewerPage> {
       }
     }
 
+    /// Get the total count of misspelled words
+    int count = 0;
+    for (final MapEntry<int, List<TextWord>> entry in errorWords.entries) {
+      count += entry.value.length;
+    }
+
     showDialog(
         context: context,
         builder: (BuildContext context) {
           return AlertDialog.adaptive(
             title: const Text('Spell Check Completed'),
             content: errorWords.isEmpty
-                ? const Text('No spell errors found')
-                : const Text('Spell errors found'),
+                ? const Text('No spell errors found.')
+                : Text('$count spelling errors found.'),
             actions: [
               TextButton(
                 onPressed: () {
