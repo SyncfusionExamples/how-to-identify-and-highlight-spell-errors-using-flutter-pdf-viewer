@@ -1,42 +1,39 @@
-# How to identify and highlight spell errors using Flutter PDF Viewer?
+# Flutter PdfViewer Highlight Spell Errors
 
-This repository contains an example that demonstrates how to identify and highlight spell errors in PDF files using Flutter PDF viewer
 
-## System requirements
+This repository contains a sample that demonstrates how to identify and highlight spell errors in Syncfusion® <Control> package.
 
-https://help.syncfusion.com/flutter/system-requirements
 
-## Clone the repository
+## Syncfusion® controls:
 
-* To clone the sample repository locally, open the command prompt in the desired location and execute the following command.
 
-```sh
+This project used the following Syncfusion® widget(s):
+* [PdfViewer](https://www.syncfusion.com/pdf-viewer-sdk/flutter-pdf-viewer)
 
-git clone https://github.com/SyncfusionExamples/how-to-identify-and-highlight-spell-errors-using-flutter-pdf-viewer.git
 
-```
+## Supported platforms
 
-* Navigate to the project directory:
 
-```sh
-cd how-to-identify-and-highlight-spell-errors-using-flutter-pdf-viewer
-```
+Refer to the following link to know about the supported platform - [Platforms](https://help.syncfusion.com/flutter/system-requirements#supported-platforms)
 
-## Installing Packages
 
-Install the required packages by running the following command:
+## Requirements to run the sample
 
-```sh
-flutter pub get
-```
 
-## Run the application
+Refer to the following link to know about system requirements - [System Requirements](https://help.syncfusion.com/flutter/system-requirements)
 
-To run the application, use the following command:
 
-```sh
-flutter run
-```
+## How to run the sample
 
-## Blog reference
-[Identify and Highlight Spelling Errors in PDFs Using Flutter PDF Viewer](https://www.syncfusion.com/blogs/post/handle-error-with-flutter-pdf-viewer)
+
+1. Clone the sample and open it in preferred IDE.
+2. Run the application.
+
+
+*Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+
+
+## License
+
+
+Syncfusion® has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion® liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion®’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion®’s samples.
